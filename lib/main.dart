@@ -18,6 +18,7 @@ class PokePedia extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      //login
       home: FirebaseAuth.instance.currentUser != null
       ?HomeScreen()
       : LoginScreen(),
